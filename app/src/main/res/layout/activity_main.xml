@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    >
+
+
+    <!--  this is for the project of coffee -->
+
+   <EditText
+       android:id="@+id/name_field"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+       android:hint="Name"
+       android:inputType="textCapWords"
+       android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="30dp"
+        android:text="topping"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        />
+
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Whipped cream"
+        android:textSize="25sp"
+        android:paddingLeft="15dp"  />
+
+    <CheckBox
+        android:id="@+id/chocolate_cream_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Chocolate cream"
+        android:textSize="25sp"
+        android:paddingStart="15dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textSize="25sp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="increment"
+            android:text="+"
+            android:textSize="25sp" />
+
+        <TextView
+
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="decrement"
+            android:text="-"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="order summary"
+        android:textAllCaps="true"
+        android:textSize="25sp" />
+
+
+    <TextView
+
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="$0"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:onClick="submitOrder"
+        android:text="order"
+        android:textSize="30sp"
+         />
+
+
+</LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+    <!--
+              THESE ALL ARE REALTED TO THE PARENT VIEW:::
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zain"
+                android:textSize="40sp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_alignParentRight="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="butu"
+                android:textSize="50sp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bkabiu"
+                android:textSize="100sp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+
+        -->
+
+
+    <!--     THIS IS THE VIEW WITH RESPESCT TO THE TEXT
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kunal"
+            android:textSize="40sp"
+            android:layout_toLeftOf="@+id/ben_text_view"
+
+        <TextView
+            android:id="@+id/ben_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="BEn"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kagure"
+            android:textSize="40sp"
+            android:layout_toRightOf="@+id/ben_text_view"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="natile"
+            android:textSize="40sp"
+            android:layout_above="@+id/lyla_text_view"/>
+
+        <TextView
+            android:id="@+id/lyla_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="lyla"
+            android:textSize="40sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Me"
+        android:textSize="40sp"
+        android:layout_toRightOf="@+id/lyla_text_view"
+        android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/omku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="omoku"
+            android:textSize="40sp"
+            android:layout_above="@+id/jenny_text_view"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amy"
+            android:textSize="50sp"
+            android:layout_above="@+id/omku"
+            android:layout_alignParentRight="true"
+
+        <TextView
+            android:id="@+id/jenny_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="jenny"
+            android:textSize="40sp" />
+
+    -->
+
+
+    <!--    THIS IS THE [ADDING ANF THE MARGIN
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="HEllO0"
+        android:textSize="40sp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="69dp"
+        android:background="@color/cardview_dark_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEllO0"
+        android:layout_margin="150dp"
+        android:layout_marginBottom="75dp"
+        android:background="@color/design_default_color_primary_dark"
+
+    android:textSize="40sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEllO0"
+        android:textSize="40sp" />
+
+
+-->
+
+
+    <!--             LINEAR LAYOUT
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pexels" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="happy bitheday"
+            android:paddingTop="20dp"
+            android:paddingLeft="30dp"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="40dp"
+            android:paddingBottom="50dp"
+            android:text="from king"
+            android:textSize="30sp"
+
+   /androidx.constraint.widget.ConstraintLayout
+    to be copied
+    -->
+
+
+
+
+
